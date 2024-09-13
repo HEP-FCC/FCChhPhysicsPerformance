@@ -1,5 +1,5 @@
 
-## Welcome to the FCC-ee Physics Performance Documentation
+## Welcome to the FCC-hh Physics Performance Documentation
 
 ### Table of Contents
 1. [Organisation](#organisation)
@@ -9,10 +9,10 @@
 ### Organisation
 
 #### Coordinators
-<!-- - Patrizia Azzi (INFN Padova) - Patrizia.Azzi@cern.ch
-- Emmanuel Perez (CERN) - Emmanuel.Perez@cern.ch
-- Michele Selvaggi (CERN) - michele.Selvaggi@cern.ch
- -->
+- Angela Taliercio (NorthWestern) - angela.taliercio@cern.ch
+- Birgit Stapf(CERN) - Emmanuel.Perez@cern.ch
+- T.B.C
+
 #### Physics Performance meetings
 <!-- 
 O(monthly) meetings: Mondays, 3pm-5pm, CERN time. Usually the third Monday of each month. 
