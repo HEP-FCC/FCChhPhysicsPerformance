@@ -8,16 +8,29 @@
 
 ### Organisation
 
+#### Meetings and communication 
+
+E-group for the FCC-hh P&P studies: fcc-ped-hh-physicsperformance-espp25@cern.ch
+
+Monthly meetings are planned for Thursdays, 4PM, CERN time, starting from 26.09.2024. *** TBC!! *** 
+- [Indico category](https://indico.cern.ch/category/18814/)
+
+General e-group for FCC-hh studies and input to the European Strategy Update: fcc-ped-hh-espp25@cern.ch
+
+Monthly general meetings on Mondays, ~4PM CERN time, starting from 30.09.2024. 
+- [Indico category](https://indico.cern.ch/category/18815/)
+
 #### Coordinators
 - Angela Taliercio (NorthWestern) - angela.taliercio@cern.ch
-- Birgit Stapf(CERN) - Emmanuel.Perez@cern.ch
-- T.B.C
+- Birgit Stapf (CERN) - birgit.stapf@cern.ch
+- Sarah Williams (Cambridge) - sarah.louise.williams@cern.ch
 
-#### Physics Performance meetings
+Please don't hesitate to reach out to us with any questions or feedback on this documentation. 
+
+<!-- #### Physics Performance meetings -->
 <!-- 
 O(monthly) meetings: Mondays, 3pm-5pm, CERN time. Usually the third Monday of each month. 
 - [indico category "Physics Performance"](https://indico.cern.ch/category/12894/).
-- [indico category for the meetings of the Physics Groups](https://indico.cern.ch/category/15156/)
 
 
 E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [here](https://e-groups.cern.ch/e-groups/EgroupsSearchForm.do). -->
@@ -25,7 +38,7 @@ E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [
 
 ---------
 
-### Physics & performance case studies 
+### Physics & performance studies 
 
 #### Ongoing 
 
