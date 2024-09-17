@@ -50,13 +50,13 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
 
 #### Ongoing 
 
-- Higgs self-coupling measurement prospects from di-Higgs production rates: Ongoing efforts in updating the projections in the $b\bar{b}\gamma\gamma$ as well as the $b\bar{b}\tau\tau$ channels. Projection for the rarer, more complex $b\bar{b}\ell\ell + E_{T}^{miss}$ is added. 
+- Higgs self-coupling measurement prospects from di-Higgs production rates: Ongoing efforts in updating the projections in the $$b\bar{b}\gamma\gamma$$ as well as the $$b\bar{b}\tau\tau$$ channels. Projection for the rarer, more complex $$b\bar{b}\ell\ell + E_{T}^{miss}$$ is added. 
 - ALPS study? **TBC**
 
 #### Planned studies & ideas 
 - Single Higgs measurements:
-    - Extending $ttH$ measurement to the alternate operating scenarios, exploit $ttH/ttZ$ ratio to constrain $\kappa_t$, use as input to two-dimensional $]\kappa_\lambda vs \kappa_t$ constraints combining with self-coupling analyses
-    - Include previously uncovered channels, e.g. $H \rightarrow WW, bb, cc, \tau\tau$. Opportunity to connect with a flavour tagging performance study. 
+    - Extending $$ttH$$ measurement to the alternate operating scenarios, exploit $$ttH/ttZ$$ ratio to constrain $$\kappa_t$$, use as input to two-dimensional $$\kappa_\lambda vs \kappa_t$$ constraints combining with self-coupling analyses
+    - Include previously uncovered channels, e.g. $$H \rightarrow WW, bb, cc, \tau\tau$$. Opportunity to connect with a flavour tagging performance study. 
 
 - Performance studies:
     - More realistic, full simulation tracker studies, e.g. applying ParticleNET, ACTs, including timing information for pile-upn suppression, in order to solidify performance benchmarks used by physics studies 
