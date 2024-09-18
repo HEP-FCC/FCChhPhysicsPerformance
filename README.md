@@ -71,6 +71,23 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
 
 #### Quick start example 
 
+Click on the steps below to see instructions 
+
+<details>
+  <summary>Step 1: LHE availabiblity and generation </summary>
+    **Describtion to be added**
+</details>
+
+<details>
+  <summary>Step 2: Fast simulation </summary>
+    **Describtion to be added**
+</details>
+
+<details>
+  <summary>Step 3: Analysis with FCCAnalyses </summary>
+    **Describtion to be added**
+</details>
+
 ----------
 
 
