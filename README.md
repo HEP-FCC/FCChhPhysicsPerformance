@@ -59,7 +59,7 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
     - Include previously uncovered channels, e.g. $H \rightarrow WW, bb, cc, \tau\tau$. Opportunity to connect with a flavour tagging performance study. 
 
 - Performance studies:
-    - More realistic, full simulation tracker studies, e.g. applying ParticleNET, ACTs, including timing information for pile-upn suppression, in order to solidify performance benchmarks used by physics studies
+    - More realistic, full simulation tracker studies, e.g. applying ParticleNET, ACTs, including timing information for pile-up suppression, in order to solidify performance benchmarks used by physics studies
 
 
 ----------
@@ -71,23 +71,27 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
 
 #### Quick start example 
 
-Click on the steps below to see instructions 
+Click on the steps below to see instructions and examples how to implement them. 
 
 <details>
-  <summary>Step 1: LHE availabiblity and generation </summary>
+  <summary>**Step 1: LHE availability and generation** </summary>
+    You can find all already generated processes in the LHE database for FCC-hh [under this link](https://fcc-physics-events.web.cern.ch/FCChh/LHEevents.php). 
+</details>
+
+<details>
+  <summary>**Step 2: Fast simulation** </summary>
     **Describtion to be added**
 </details>
 
 <details>
-  <summary>Step 2: Fast simulation </summary>
+  <summary>**Step 3: Analysis with FCCAnalyses** </summary>
     **Describtion to be added**
 </details>
 
 <details>
-  <summary>Step 3: Analysis with FCCAnalyses </summary>
+  <summary>**Step 4: Statistical interpretation with combine** </summary>
     **Describtion to be added**
 </details>
-
 ----------
 
 
