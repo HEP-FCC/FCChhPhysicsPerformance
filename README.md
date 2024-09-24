@@ -4,7 +4,7 @@
 ### Table of Contents
 1. [Organisation](#organisation)
 2. [Overview of goals and studies](#overview-of-goals-and-studies)
-3. [How to implement your FCC-hh study ](#how-to-implement-your-FCC-hh-study)
+3. [How to implement your FCC-hh study ](#how-to-implement-your-fcc-hh-study)
 
 -----
 
@@ -12,14 +12,14 @@
 
 #### Meetings and communication 
 
-E-group for the FCC-hh P&P studies: fcc-ped-hh-physicsperformance-espp25@cern.ch
+E-group for the FCC-hh P&P studies: [fcc-ped-hh-physicsperformance-espp25@cern.ch](mailto:fcc-ped-hh-physicsperformance-espp25@cern.ch)
 
 To subscribe, go [here](https://e-groups.cern.ch/e-groups/EgroupsSearchForm.do).
 
 Monthly meetings are planned for Thursdays, 4PM, CERN time, starting from mid October.
 - [Indico category](https://indico.cern.ch/category/18814/)
 
-General e-group for FCC-hh studies and input to the European Strategy Update: fcc-ped-hh-espp25@cern.ch
+General e-group for FCC-hh studies and input to the European Strategy Update: [fcc-ped-hh-espp25@cern.ch](mailto:fcc-ped-hh-espp25@cern.ch).
 
 Monthly general meetings on Mondays, ~4PM CERN time, starting from 30.09.2024. 
 - [Indico category](https://indico.cern.ch/category/18815/)
@@ -73,7 +73,7 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
 
  <figure>
   <img src="images/flowchart_fcc_hh_workflow.png" alt="Overview of technical workflow" usemap="#techworkflow">
-  <figcaption>Overview of the FCC-hh workflow. Click on the various steps for more information.</figcaption>
+  <figcaption> <em> Overview of the FCC-hh workflow. Click on the various steps for more information. </em> </figcaption>
 </figure> 
 
 <map name="techworkflow">
@@ -91,17 +91,17 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
 
 The typical technical workflow of a FCC-hh study is illustrated above. We rely on the software tools provided by the [key4hep project](https://github.com/key4hep) - a common, turnkey software stack for future colliders. 
 
-Commonly generators like [MadGraph](https://launchpad.net/mg5amcnlo) and [POWHEG](https://powhegbox.mib.infn.it/) are used for the generation of proton-proton collision events at energies ~ 100 TeV. **Info about the PDF sets**. Those events are then stored in the [LHE format](https://arxiv.org/abs/hep-ph/0609017). 
+Commonly generators like [MadGraph](https://launchpad.net/mg5amcnlo) and [POWHEG](https://powhegbox.mib.infn.it/) are used for the generation of proton-proton collision events at energies ~ 100 TeV. **Info about the PDF sets TBA**. Those events are stored in the [LHE format](https://arxiv.org/abs/hep-ph/0609017). 
 
-Hadronization, particle decays and a fast detector simulation with `DELPHES` are then applied in one step, resulting in reconstructed events stored in the EDM4hep data model. The available `DELPHES` scenarios for FCC-hh and where to find them are described in more detail [below](#delphes-scenarios-for-FCC-hh-and-official-production-campaigns). 
+Hadronization, particle decays and a fast detector simulation with `DELPHES` are applied in one step, resulting in reconstructed events stored in the `EDM4hep` data model. The available `DELPHES` scenarios for FCC-hh and where to find them are described in more detail [below](#delphes-scenarios-for-FCC-hh-and-official-production-campaigns). 
 
 To process the `EDM4hep` events we use the common `FCCAnalyses` framework, providing multi-threaded vectorial analysis tools using `ROOT`'s [RDataframe class](https://root.cern/doc/master/classROOT_1_1RDataFrame.html). 
 
-The output of `FCCAnalyses` framework can either be another (flat) `ROOT` ntuple, or simple histograms, which can than be further used in the standard ways, e.g. with multi-variate analysis (MVA) libraries, and the final statistical interpretation with the `combine` statistics tool, from the `CMS` collaboration. 
+The output of `FCCAnalyses` framework can either be another (flat) `ROOT` ntuple, or simple histograms, which can be processed further in the standard ways, e.g. with multi-variate analysis (MVA) libraries, and in the final statistical interpretation with the `combine` statistics tool from the `CMS` collaboration. 
 
-More information, as well as hands-on examples, for every one of these steps are given in the [Quick Start Example](#quick-start-example) section below. 
+More information, as well as hands-on examples for every one of these steps are given in the [Quick Start Example](#quick-start-example) section below. 
 
-### Delphes scenarios for FCC-hh and official production campaigns
+#### Delphes scenarios for FCC-hh and official production campaigns
 
 
 #### Quick start example 
