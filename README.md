@@ -162,13 +162,33 @@ A database of all large-scale productions of `DELPHES` events for FCC-hh studies
 <details>
 <summary>FCC-hh production tags</summary>
 
-| Production Tag    | Description |
-| -------- | ------- |
-| Delphes v0.2  |  Production for CDR studies, not using `EDM4hep` yet. Using original baseline `DELPHES` card (now outdated). |
-| Delphes v0.3 | Production for CDR studies, not using `EDM4hep` yet.  Using original baseline `DELPHES` card (now outdated).  |
-| Delphes v0.4    | First intermediate production switching to `EDM4hep`.  Using original baseline `DELPHES` card (now outdated).  |
-| Delphes v0.5    | Intermediate production using the updated `DELPHES` scenarios I and II, and pre-release `EDM4hep` in `v0`.  |
-| Delphes v0.6    | Production for the strategy update 2025 studies - using  `DELPHES` scenarios I and II, and `EDM4hep` in `v1`.  |
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-7zrl">Production Tag</th>
+    <th class="tg-7zrl">Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-7zrl">Delphes v0.2</td>
+    <td class="tg-0lax">Production for CDR studies, not using EDM4hep yet. Using original baseline DELPHES card (now outdated).</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">Delphes v0.3</td>
+    <td class="tg-0lax">Production for CDR studies, not using EDM4hep yet. Using original baseline DELPHES card (now outdated).</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">Delphes v0.4</td>
+    <td class="tg-0lax">First intermediate production switching to EDM4hep. Using original baseline DELPHES card (now outdated).</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">Delphes v0.5</td>
+    <td class="tg-0lax">Intermediate production using the updated DELPHES scenarios I and II, and pre-release EDM4hep in v0.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">Delphes v0.6</td>
+    <td class="tg-0lax">Production for the strategy update 2025 studies - using DELPHES scenarios I and II, and EDM4hep in v1.</td>
+  </tr>
+</tbody></table>
 
 </details>
 
