@@ -71,7 +71,7 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
 <img src="images/flowchart_fcc_hh_workflow.png" alt="Overview of technical workflow" usemap="#techworkflow">
 
 <map name="techworkflow">
-    <area shape="rect" coords="5,37,92,278" alt="Event generation tutorial for FCC" href="https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/FccFastSimGeneration.html">
+    <area shape="rect" coords="5,37,279,90" alt="Event generation tutorial for FCC" href="https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/FccFastSimGeneration.html">
 </map>
 
 
