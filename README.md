@@ -93,7 +93,7 @@ The typical technical workflow of a FCC-hh study is illustrated above. We rely o
 
 Commonly generators like [MadGraph](https://launchpad.net/mg5amcnlo) and [POWHEG](https://powhegbox.mib.infn.it/) are used for the generation of proton-proton collision events at energies ~ 100 TeV. **Info about the PDF sets TBA**. Those events are stored in the [LHE format](https://arxiv.org/abs/hep-ph/0609017). 
 
-Hadronization, particle decays and a fast detector simulation with `DELPHES` are applied in one step, resulting in reconstructed events stored in the `EDM4hep` data model. The available `DELPHES` scenarios for FCC-hh and where to find them are described in more detail [below](#delphes-scenarios-for-FCC-hh-and-official-production-campaigns). 
+Hadronization, particle decays and a fast detector simulation using parametrizations for resolutions and efficiencies with `DELPHES` are applied in one step, resulting in reconstructed events stored in the `EDM4hep` data model. The available `DELPHES` scenarios for FCC-hh and where to find them are described in more detail [below](#delphes-scenarios-for-FCC-hh-and-official-production-campaigns). 
 
 To process the `EDM4hep` events we use the common `FCCAnalyses` framework, providing multi-threaded vectorial analysis tools using `ROOT`'s [RDataframe class](https://root.cern/doc/master/classROOT_1_1RDataFrame.html). 
 
@@ -102,6 +102,80 @@ The output of `FCCAnalyses` framework can either be another (flat) `ROOT` ntuple
 More information, as well as hands-on examples for every one of these steps are given in the [Quick Start Example](#quick-start-example) section below. 
 
 #### Delphes scenarios for FCC-hh and official production campaigns
+
+There are two current `DELPHES` cards available for the FCC-hh studies:
+- [Scenario I](https://github.com/delphes/delphes/blob/master/cards/FCC/scenarios/FCChh_I.tcl): An optimistic scenario to study benchmarks reaching ultimate precision. Assumes LHC run 2 conditions with e.g. an ideal crystal calorimeter, b-tagging performances slightly better than with current `CMS` best performance with ParticleNet. 
+- [Scenario II](https://github.com/delphes/delphes/blob/master/cards/FCC/scenarios/FCChh_II.tcl): This is the **baseline** scenario based on the FCC-hh general purpose detector concept proposed in the CDR. Compared to the previous FCC-hh card used for the first iteration of FCC-hh physics and performance studies for the CDR this implements several bug fixes (e.g. accounting for electron bremsstrahlung, fixes to parametrization issues).
+
+Click below to see more details on the two scenarios. 
+
+<details>
+<summary>Comparison table Scenario I and II </summary>
+This table compares relative momentum resolutions and efficiencies for a few key physics objects between the two scenarios. Please note that the numbers quoted cover the total range of resolutions and efficiencies, so across all transverse momenta and pseudorapidity bins, including the forward regions up to pseudorapities of 6. 
+
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0lax"></th>
+    <th class="tg-8d8j" colspan="2"><span style="font-weight:normal">  Relative <em>p</em> resolution</span></th>
+    <th class="tg-8d8j" colspan="2"><span style="font-weight:normal">Efficiency</span></th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-7zrl"></td>
+    <td class="tg-7zrl">Scenario I</td>
+    <td class="tg-7zrl">Scenario II</td>
+    <td class="tg-7zrl">Scenario I</td>
+    <td class="tg-7zrl">Scenario II</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl"><span style="font-weight:normal">Electrons</span></td>
+    <td class="tg-8d8j"><span style="font-weight:normal">0.4-1%</span></td>
+    <td class="tg-8d8j"><span style="font-weight:normal">0.8-3%</span></td>
+    <td class="tg-8d8j"><span style="font-weight:normal">76-95%</span></td>
+    <td class="tg-8d8j"><span style="font-weight:normal">72-90%</span></td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl"><span style="font-weight:normal">Muons</span></td>
+    <td class="tg-8d8j"><span style="font-weight:normal">0.5-3%</span></td>
+    <td class="tg-8d8j">1-6%</td>
+    <td class="tg-8d8j"><span style="font-weight:normal">90-99%</span></td>
+    <td class="tg-8d8j"><span style="font-weight:normal">88-97%</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j" colspan="3">Medium b-tagging </td>
+    <td class="tg-8d8j">80-90%</td>
+    <td class="tg-8d8j">76-86%</td>
+  </tr>
+</tbody></table>
+</details>
+
+<details>
+<summary>Overview of CDR detector concept </summary>
+ <figure>
+  <img src="images/CDR_detector_concept.png" alt="Overview of technical workflow" >
+  <figcaption> <em> Overview of the FCC-hh baseline detector concept as proposed in the CDR. [Slide from M. Selvaggi] </em> </figcaption>
+</figure> 
+</details>
+
+A database of all large-scale productions of `DELPHES` events for FCC-hh studies can be found [here](https://fcc-physics-events.web.cern.ch/FCChh/index.php). The up-to-date production campaign to use for studies for the 2025 European Strategy update will be using the production tag `v06`. All previous production campaigns are kept for legacy reasons, click below to see more details. 
+
+<details>
+<summary>FCC-hh production tags</summary>
+
+| Production Tag    | Description |
+| -------- | ------- |
+| Delphes v0.2  |  Production for CDR studies, not using `EDM4hep` yet. Using original baseline `DELPHES` card (now outdated). |
+| Delphes v0.3 | Production for CDR studies, not using `EDM4hep` yet.  Using original baseline `DELPHES` card (now outdated).  |
+| Delphes v0.4    | First intermediate production switching to `EDM4hep`.  Using original baseline `DELPHES` card (now outdated).  |
+| Delphes v0.5    | Intermediate production using the updated `DELPHES` scenarios I and II, and pre-release `EDM4hep` in `v0`.  |
+| Delphes v0.6    | Production for the strategy update 2025 studies - using  `DELPHES` scenarios I and II, and `EDM4hep` in `v1`.  |
+
+</details>
+
+
+You can find the `Delphes` scenarios (and all their needed inputs) in the official [DELPHES git repository](https://github.com/delphes/delphes/blob/master/cards/FCC/scenarios) as well as on `eos` under the path `/eos/experiment/fcc/hh/utils/delphescards/`, where they are sorted into subdirectories corresponding to the respective production tags. 
+
+
 
 
 #### Quick start example 
