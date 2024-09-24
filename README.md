@@ -13,7 +13,7 @@
 
 E-group for the FCC-hh P&P studies: fcc-ped-hh-physicsperformance-espp25@cern.ch
 
-Monthly meetings are planned for Thursdays, 4PM, CERN time, starting from 26.09.2024. *** TBC!! *** 
+Monthly meetings are planned for Thursdays, 4PM, CERN time, starting from mid October.
 - [Indico category](https://indico.cern.ch/category/18814/)
 
 General e-group for FCC-hh studies and input to the European Strategy Update: fcc-ped-hh-espp25@cern.ch
@@ -67,7 +67,14 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
 ### How to implement your FCC-hh study 
 
 #### Technical workflow overview 
-- put a flowchart here!
+
+<img src="images/flowchart_fcc_hh_workflow.png" alt="Overview of technical workflow" usemap="#techworkflow">
+
+<map name="techworkflow">
+    <area shape="rect" coords="5,37,92,278" alt="Event generation tutorial for FCC" href="https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/FccFastSimGeneration.html">
+</map>
+
+
 
 #### Quick start example 
 
