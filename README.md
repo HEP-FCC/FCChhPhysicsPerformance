@@ -71,10 +71,16 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
 <img src="images/flowchart_fcc_hh_workflow.png" alt="Overview of technical workflow" usemap="#techworkflow">
 
 <map name="techworkflow">
-    <area shape="rect" coords="5,37,279,90" alt="Event generation tutorial for FCC" href="https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/FccFastSimGeneration.html" target="_blank">
+    <area shape="rect" coords="6,37,279,90" alt="Event generation tutorial for FCC" href="https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/FccFastSimGeneration.html" target="_blank">
     <area shape="rect" coords="286,51,337,73" alt="LHE events database for FCC-hh" href="https://fcc-physics-events.web.cern.ch/FCChh/LHEevents.php" target="_blank">
     <area shape="rect" coords="365,37,607,90" alt="Pythia8" href="https://www.pythia.org/" target="_blank">
     <area shape="rect" coords="637,37,878,90" alt="DELPHES framework for fast simulation of a generic collider experiment" href="https://cp3.irmp.ucl.ac.be/projects/delphes" target="_blank">
+    <area shape="rect" coords="705,135,825,155" alt="k4SimDelphes" href="https://github.com/key4hep/k4SimDelphes" target="_blank"> 
+    <!-- Alternatively link tutorial> <area shape="rect" coords="705,135,825,155" alt="Tutorial how to use k4SimDelphes" href="https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/k4simdelphes/doc/starterkit/FccFastSimDelphes/Readme.html target="_blank">  -->
+    <area shape="rect" coords="640,195,776,220" alt="EDM4hep event data model" href="https://github.com/key4hep/EDM4hep" target="_blank"> 
+    <area shape="rect" coords="365,182,607,237" alt="FCCAnalyses framework" href="https://github.com/HEP-FCC/FCCAnalyses" target="_blank"> 
+    <area shape="rect" coords="294,197,357,220" alt="ROOT trees information" href="https://root.cern/manual/trees/" target="_blank"> 
+    <area shape="rect" coords="6,182,128,237" alt="CMS combine package documentation" href="https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/latest/" target="_blank"> 
 
 
 </map>
