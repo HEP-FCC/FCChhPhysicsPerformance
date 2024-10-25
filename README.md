@@ -54,13 +54,19 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
 #### Ongoing 
 
 - Higgs self-coupling measurement prospects from di-Higgs production rates: Ongoing efforts in updating the projections in the $b\bar{b}\gamma\gamma$ as well as the $b\bar{b}\tau\tau$ channels. Projection for the rarer, more complex $b\bar{b}\ell\ell + E_{T}^{miss}$ is added. 
-- ALPS study? **TBC**
+<!-- - ALPS study? **TBC** -->
+- Jet flavour tagging with transformer architecture
+
 
 #### Planned studies & ideas 
 - Single Higgs measurements:
-    - Extending $ttH$ measurement to the alternate operating scenarios, exploit $ttH/ttZ$ ratio to constrain $\kappa_t$, use as input to two-dimensional $]\kappa_\lambda vs \kappa_t$ constraints combining with self-coupling analyses
-    - Include previously uncovered channels, e.g. $H \rightarrow WW, bb, cc, \tau\tau$. Opportunity to connect with a flavour tagging performance study. 
-
+    - Extending $t\bar{t}H$ measurement to the alternate operating scenarios, exploit $t\bar{t}H/t\bar{t}Z$ ratio to constrain $\kappa_t$, 
+      use as input to two-dimensional $\kappa_\lambda \, \text{vs} \, \kappa_t$ constraints combining with self-coupling analyses
+    - $H(\mu\mu)$ analyses at alternate energy points
+    - Analysis of $t\bar{t}H(\gamma\gamma)$ channel previously uncovered
+    - Include previously uncovered channels, e.g. $H \rightarrow WW, bb, cc, \tau\tau$. Opportunity to connect with a flavour tagging performance study
+  
+-
 - Performance studies:
     - More realistic, full simulation tracker studies, e.g. applying ParticleNET, ACTs, including timing information for pile-up suppression, in order to solidify performance benchmarks used by physics studies
 
@@ -157,7 +163,7 @@ This table compares relative momentum resolutions and efficiencies for a few key
 </figure> 
 </details>
 
-A database of all large-scale productions of `DELPHES` events for FCC-hh studies can be found [here](https://fcc-physics-events.web.cern.ch/FCChh/index.php). The up-to-date production campaign to use for studies for the 2025 European Strategy update will be using the production tag `v06`. All previous production campaigns are kept for legacy reasons, click below to see more details. 
+A database of all large-scale productions of `DELPHES` events for FCC-hh studies can be found [here](https://fcc-physics-events.web.cern.ch/FCChh/index.php). The up-to-date production campaign to use for studies for the 2025 European Strategy update will be using the production tag `v06`. All previous production campaigns are kept for documenation purpose only, click below to see more details. 
 
 <details>
 <summary>FCC-hh production tags</summary>
