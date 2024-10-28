@@ -66,7 +66,6 @@ We have collected a list of ongoing studies as well as ideas of areas below, but
     - Analysis of $t\bar{t}H(\gamma\gamma)$ channel previously uncovered
     - Include previously uncovered channels, e.g. $H \rightarrow WW, bb, cc, \tau\tau$. Opportunity to connect with a flavour tagging performance study
   
--
 - Performance studies:
     - More realistic, full simulation tracker studies, e.g. applying ParticleNET, ACTs, including timing information for pile-up suppression, in order to solidify performance benchmarks used by physics studies
 
@@ -208,27 +207,78 @@ You can find the `Delphes` scenarios (and all their needed inputs) in the offici
 
 Click on the steps below to see instructions and examples how to implement them. 
 
+You can also view the slides as well as watch a recording of the hands-on software tutorial covering the first three steps during our first meeting <a href="https://indico.cern.ch/event/1467696/">here</a>.
+
 <details>
-  <summary>**Step 1: LHE availability and generation** </summary>
-    You can find all already generated processes in the LHE database for FCC-hh [under this link](https://fcc-physics-events.web.cern.ch/FCChh/LHEevents.php). 
+  <summary><b>Step 1: LHE availability and generation</b> </summary>
+    <br>
+    You can find all already generated processes in the LHE database for FCC-hh <a href="https://fcc-physics-events.web.cern.ch/FCChh/LHEevents.php">on this webpage</a>. 
+    The database is interactively searchable, and provides all sample generation information such as available statistics and cross-sections. Please contact us with any questions on the samples or if you find missing information or inaccuracies. <br>
+    <br>
+    All files are available on the FCC-hh <code>eos</code> space under <code>/eos/experiment/fcc/hh/generation/lhe/</code>. 
+    <b>To have access to the <code>eos</code> space you must be a member of the <a href ="https://e-groups.cern.ch/e-groups/Egroup.do?egroupId=10164506">fcc-eos-access</a> egroup. Please request membership from the FCC software coordinators.</b> <br>
+    <br>
+    A (FCC-ee specific) tutorial how to generate your own LHE within the FCC software environment is available <a href="https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/FccFastSimGeneration.html">here</a>. We also run large-scale productions with the <a href="https://github.com/HEP-FCC/EventProducer">EventProducer framework</a>.<br> 
+    <br>
+    <b>If you require additional LHE generation or would like to add your own production to the database please get in touch so we can arrange that.</b>
 </details>
 
 <details>
-  <summary>**Step 2: Fast simulation** </summary>
+  <summary><b>Step 2: Fast simulation</b> </summary>
+    <br>
+    The steps below show a quick example how to produce <code>EDM4hep</code> reco-level samples from existing LHE with <code>Delphes</code> fast simulation, using the FCC-hh cards as explained <a href="#delphes-scenarios-for-fcc-hh-and-official-production-campaigns">above</a>. A more indepth tutorial, explaining the different steps in detail and especially how the fast simulation works conceptually, is available <a href="tutorials/FastSim.md">here</a>. <br>
+    <br>
+    <b>Ideally this step should be centrally run for large scale productions, relying on the EventProducer framework and making the files available in the database. Please contact us with any production requests.</b> <br>
+    <br>
+    First we set-up a working directory and the latest <code>key4hep</code> release with the following commands: <br>
+    <br>
+    <pre><code>
+    mkdir EDM4HEP_prod
+    cd EDM4HEP_prod
+    source /cvmfs/sw.hsf.org/key4hep/setup.sh
+    which DelphesPythia8_EDM4HEP
+    </code></pre> 
+    This should a return a path like <code>/cvmfs/sw.hsf.org/key4hep/_somewhere_/bin/DelphesPythia8_EDM4HEP</code>, which is the tool we will use to run <code>Pythia</code> and <code>Delphes</code> over our LHE events. 
+    <br>
+    <br>
+    Next, we check which input arguments are required for running this with:
+    <br>
+    <pre><code>
+    DelphesPythia8_EDM4HEP -h
+    </code></pre> 
+    We see that we need to provide the following input files and arguments:
+     <ul>
+        <li><code>config_file</code>
+        - This is the <code>Delphes</code> card, containing the parametrization of efficiencies and resolutions. As explained above, there are currently two available for FCC-hh, with <a href="">Scenario II</a> being the baseline. The <code>key4hep</code> stack that we set up also comes with an installation of <code>Delphes</code>, containing the directory of all available cards in <code>$DELPHES_DIR</code>, so for our example we can use <code>$DELPHES_DIR/cards/FCC/scenarios/FCChh_II.tcl</code>.
+        </li>
+        <li><code>output_config_file</code>
+        - This defines which of the <code>Delphes</code> output collections we want to write to our <code>EDM4hep</code> output file, and with which names. A standard default version of this file also comes with <code>key4hep</code> stack as <code>$K4SIMDELPHES/edm4hep_output_config.tcl</code>.
+        </li>
+        <li>pythia_card
+        - This is the configuration for <code>Pythia</code> that we want to use, specifying which input we want to run over, how many events to process, the hadronization settings and optionally settings for filtering specific particle decay channels and jet matching schemes. For our tutorial we will use the set-up for using a tester di-Higgs production LHE file of 10k events, and filtering that for the final state with two photons and two b-jets, found here: <code>/eos/experiment/fcc/hh/tutorials/lhe_unpacked_tester/tester_pwp8_pp_hh_5f_hhbbyy.cmd</code>. You can find all <code>Pythia</code> cards for officially produced samples in this directory: <code>/eos/experiment/fcc/hh/utils/pythiacards</code>.
+        </li>
+        <li>output_file
+        - Simply the name of the output <code>.root</code> file in <code>EDM4hep</code> format we want to produce. Let's use <code>pwp8_pp_hh_5f_hhbbyy.root</code>. 
+        </li>
+      </ul> 
+    Now you can run everything with:
+    <pre><code>
+    DelphesPythia8_EDM4HEP $DELPHES_DIR/cards/FCC/scenarios/FCChh_II.tcl $K4SIMDELPHES/edm4hep_output_config.tcl
+    /eos/experiment/fcc/hh/tutorials/lhe_unpacked_tester/tester_pwp8_pp_hh_5f_hhbbyy.cmd pwp8_pp_hh_5f_hhbbyy.root  
+    </code></pre>
+    This will process 10k events, which should take about 30 mins or so, if you are running locally on <code>lxplus</code>.
+    In case you want to understand more about how the cards and config files are written, please refer to the <a href="tutorials/FastSim.md">indepth tutorial on fast simulation</a>.
+</details>
+
+<details>
+  <summary><b>Step 3: Analysis with FCCAnalyses</b> </summary>
     **Describtion to be added**
 </details>
 
 <details>
-  <summary>**Step 3: Analysis with FCCAnalyses** </summary>
-    **Describtion to be added**
+  <summary><b>Step 4: Statistical interpretation with combine</b> </summary>
+    <em>To come. Tentatively planned as an interactive tutorial for the second meeting on 14th November 2024. Please let us know if you are interested in this!</em>
 </details>
-
-<details>
-  <summary>**Step 4: Statistical interpretation with combine** </summary>
-    **Describtion to be added**
-</details>
-----------
-
 
 ----------
  
