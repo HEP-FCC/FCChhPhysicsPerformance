@@ -226,7 +226,7 @@ You can also view the slides as well as watch a recording of the hands-on softwa
 <details>
   <summary><b>Step 2: Fast simulation</b> </summary>
     <br>
-    The steps below show a quick example how to produce <code>EDM4hep</code> reco-level samples from existing LHE with <code>Delphes</code> fast simulation, using the FCC-hh cards as explained <a href="#delphes-scenarios-for-fcc-hh-and-official-production-campaigns">above</a>. A more indepth tutorial, explaining the different steps in detail and especially how the fast simulation works conceptually, is available <a href="tutorials/FastSim.md">here</a>. <br>
+    The steps below show a quick example how to produce <code>EDM4hep</code> reco-level samples from existing LHE with <code>Delphes</code> fast simulation, using the FCC-hh cards as explained <a href="#delphes-scenarios-for-fcc-hh-and-official-production-campaigns">above</a>. A more indepth tutorial, explaining the different steps in detail and especially how the fast simulation works conceptually, is available <a href="tutorials/FastSim">here</a>. <br>
     <br>
     <b>Ideally this step should be centrally run for large scale productions, relying on the EventProducer framework and making the files available in the database. Please contact us with any production requests.</b> <br>
     <br>
@@ -267,7 +267,7 @@ You can also view the slides as well as watch a recording of the hands-on softwa
     /eos/experiment/fcc/hh/tutorials/lhe_unpacked_tester/tester_pwp8_pp_hh_5f_hhbbyy.cmd pwp8_pp_hh_5f_hhbbyy.root  
     </code></pre>
     This will process 10k events, which should take about 30 mins or so, if you are running locally on <code>lxplus</code>.
-    In case you want to understand more about how the cards and config files are written, please refer to the <a href="tutorials/FastSim.md">indepth tutorial on fast simulation</a>.
+    In case you want to understand more about how the cards and config files are written, please refer to the <a href="tutorials/FastSim">indepth tutorial on fast simulation</a>.
 </details>
 
 <details>
