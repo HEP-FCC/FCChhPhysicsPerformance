@@ -6,6 +6,7 @@
 2. [Overview of goals and studies](#overview-of-goals-and-studies)
 3. [How to implement your FCC-hh study ](#how-to-implement-your-fcc-hh-study)
 4. [Instructions for FCC-hh note submission to CDS](#instructions-for-fcc-hh-note-submission-to-cds)
+
 -----
 
 ### Organisation
