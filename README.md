@@ -5,7 +5,7 @@
 1. [Organisation](#organisation)
 2. [Overview of goals and studies](#overview-of-goals-and-studies)
 3. [How to implement your FCC-hh study ](#how-to-implement-your-fcc-hh-study)
-
+4. [Instructions for FCC-hh note submission to CDS](#instructions-for-fcc-hh-note-submission-to-cds)
 -----
 
 ### Organisation
@@ -222,7 +222,7 @@ You can also view the slides as well as watch a recording of the hands-on softwa
     <br>
     <b>If you require additional LHE generation or would like to add your own production to the database please get in touch so we can arrange that.</b>
 </details>
-
+ <br>
 <details>
   <summary><b>Step 2: Fast simulation</b> </summary>
     <br>
@@ -269,19 +269,48 @@ You can also view the slides as well as watch a recording of the hands-on softwa
     This will process 10k events, which should take about 30 mins or so, if you are running locally on <code>lxplus</code>.
     In case you want to understand more about how the cards and config files are written, please refer to the <a href="tutorials/FastSim">indepth tutorial on fast simulation</a>.
 </details>
-
+ <br>
 <details>
   <summary><b>Step 3: Analysis with FCCAnalyses</b> </summary>
-    **Describtion to be added**
-</details>
+  <br>
+    <a href="https://github.com/HEP-FCC/FCCAnalyses">FCCAnalyses</a> is a common software framework to analyse <code>EDM4hep</code> events using the <code>RDataframe</code> classes of <code>ROOT</code>. You can find the full framework documentation <a href="https://hep-fcc.github.io/FCCAnalyses/">here</a>. In a nutshell, the approach is to build an analysis graph with simple <code>python</code> syntax defining all the input/output variables, and using <code>C++</code> libraries for complex computations. Examples analyses for FCC-hh case studies are available in the <a href=https://github.com/HEP-FCC/FCCAnalyses/tree/master/examples/FCChh>examples/FCCChh</a> directory. Here we will walk through the <code>ggHH_bbyy</code> example, using di-Higgs events where one Higgs decays to b-quarks and the other to photons.
+    <br>
+    <br>
+    <b><em>Setting up the framework</em></b>
+    <br>
+    The simplest way to set-up the framework is to use the version that comes with the <code>key4hep</code> stack. 
+    <br>
+    <br>
+    <b><em>Analysis stage 1: Convert to (skimmed) ntuple</em></b>
+    <br>
+    <br>
+    <b><em>Analysis final: Apply event selection</em></b>
+    <br>
+    <br>
+    <b><em>Analysis plots</em></b>
 
+</details>
+ <br>
 <details>
   <summary><b>Step 4: Statistical interpretation with combine</b> </summary>
     <em>To come. Tentatively planned as an interactive tutorial for the second meeting on 14th November 2024. Please let us know if you are interested in this!</em>
 </details>
 
-----------
+
+### Instructions for FCC-hh note submission to CDS
+
+Please follow these steps to submit a FCC-hh note to CDS, in order to be included in the official FCC ESPP 2025 inputs: 
  
+ - Use the FCC note template which you can find on overleaf [under this link](https://www.overleaf.com/read/kfshvxvnkpvh#9566f2).
+ You can copy the project by finding it in your overleaf homepage and clicking the corresponding button, as shown below 
+ ![overleaf copy button](images/overleaf_copy_option.png)
+
+
+ - Create your submission in the [FCC Physics and Experiments Note Submission](https://repository.cern/communities/fcc-ped-sub/records?q=&l=list&p=1&s=10&sort=newest) community and follow the instructions outlined in [this google document](https://docs.google.com/document/d/17pZmNR3ny3yHospsMrQLYkPO6l89Y_zF-SS6OhC-wtI/edit?tab=t.0) in order to submit your note for review. 
+
+ - In case of any questions or uncertainties, please don't hesitate to contact us.
+ ----------
+
 ### Further resources 
 
 Note: To be checked and updated! 
