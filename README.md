@@ -25,7 +25,7 @@ We welcome you to join if you want to stay up-to-date with or contribute to the 
 - Angela Taliercio (NorthWestern) 
 - Birgit Stapf (CERN) 
 - Sarah Williams (Cambridge) 
-- Shankha Banerjee (Chennai)
+- Shankha Banerjee (IMSc, Chennai)
 - Tevong You (King's College London)
 
 Please don't hesitate to reach out to us with any questions or feedback on this documentation. You can reach all of us at [fcc-ped-physicsgroup-hh-admin@cern.ch](mailto:fcc-ped-physicsgroup-hh-admin@cern.ch).
@@ -34,13 +34,13 @@ Please don't hesitate to reach out to us with any questions or feedback on this 
 
 ### History of the group 
 
-Monthly meetings are planned for Thursdays, 4PM, CERN time, starting from mid October.
+<!-- Monthly meetings are planned for Thursdays, 4PM, CERN time, starting from mid October.
 - [Indico category](https://indico.cern.ch/category/18814/)
 
 Monthly general meetings on Mondays, ~4PM CERN time, starting from 30.09.2024. 
 - [Indico category](https://indico.cern.ch/category/18815/)
 
-A kick-off event for the FCC-hh effort was held on 03.09.2024, the [agenda and slides are available here](https://indico.cern.ch/event/1439072/timetable/).
+A kick-off event for the FCC-hh effort was held on 03.09.2024, the [agenda and slides are available here](https://indico.cern.ch/event/1439072/timetable/). -->
 
 
 <!-- #### Physics Performance meetings -->
