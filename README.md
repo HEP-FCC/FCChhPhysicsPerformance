@@ -1,5 +1,5 @@
 
-## Welcome to the FCC-hh Physics Performance Documentation
+## Welcome to the FCC-hh Physics Group Documentation
 
 ### Table of Contents
 1. [Organisation](#organisation)
@@ -13,26 +13,35 @@
 
 #### Meetings and communication 
 
-E-group for the FCC-hh P&P studies: [fcc-ped-hh-physicsperformance-espp25@cern.ch](mailto:fcc-ped-hh-physicsperformance-espp25@cern.ch)
+We have monthly meetings Friday at 16h CERN time, you can find all dates in our [indico cateory](https://indico.cern.ch/category/18814/).
 
-To subscribe, go [here](https://e-groups.cern.ch/e-groups/EgroupsSearchForm.do).
+We have setup the following communication channels: 
+- E-group for FCC-hh studies: [fcc-ped-physicsgroup-hh@cern.ch](mailto:fcc-ped-physicsgroup-hh@cern.ch). To subscribe, go [here](https://gms.web.cern.ch/group/fcc-ped-physicsgroup-hh/details).
+- Join the FCC-hh mattermost channel [by following this link](https://mattermost.web.cern.ch/signup_user_complete/?id=a15uw9tehbyiix4qnkgnmaiwia&md=link&sbr=su).
+
+We welcome you to join if you want to stay up-to-date with or contribute to the FCC-hh physics studies. 
+
+#### Coordinators
+- Angela Taliercio (NorthWestern) 
+- Birgit Stapf (CERN) 
+- Sarah Williams (Cambridge) 
+- Shankha Banerjee (Chennai)
+- Tevong You (King's College London)
+
+Please don't hesitate to reach out to us with any questions or feedback on this documentation. You can reach all of us at [fcc-ped-physicsgroup-hh-admin@cern.ch](mailto:fcc-ped-physicsgroup-hh-admin@cern.ch).
+
+### FCC PED organisation 
+
+### History of the group 
 
 Monthly meetings are planned for Thursdays, 4PM, CERN time, starting from mid October.
 - [Indico category](https://indico.cern.ch/category/18814/)
-
-General e-group for FCC-hh studies and input to the European Strategy Update: [fcc-ped-hh-espp25@cern.ch](mailto:fcc-ped-hh-espp25@cern.ch).
 
 Monthly general meetings on Mondays, ~4PM CERN time, starting from 30.09.2024. 
 - [Indico category](https://indico.cern.ch/category/18815/)
 
 A kick-off event for the FCC-hh effort was held on 03.09.2024, the [agenda and slides are available here](https://indico.cern.ch/event/1439072/timetable/).
 
-#### Coordinators
-- Angela Taliercio (NorthWestern) - angela.taliercio@cern.ch
-- Birgit Stapf (CERN) - birgit.stapf@cern.ch
-- Sarah Williams (Cambridge) - sarah.louise.williams@cern.ch
-
-Please don't hesitate to reach out to us with any questions or feedback on this documentation. 
 
 <!-- #### Physics Performance meetings -->
 <!-- 
