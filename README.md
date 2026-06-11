@@ -13,7 +13,7 @@
 
 #### Meetings and communication 
 
-We have monthly meetings Friday at 16h CERN time, you can find all dates in our [indico cateory](https://indico.cern.ch/category/18814/).
+We have monthly meetings Thursday at 11h CERN time, you can find all dates in our [indico cateory](https://indico.cern.ch/category/18813/).
 
 We have setup the following communication channels: 
 - E-group for FCC-hh studies: [fcc-ped-physicsgroup-hh@cern.ch](mailto:fcc-ped-physicsgroup-hh@cern.ch). To subscribe, go [here](https://gms.web.cern.ch/group/fcc-ped-physicsgroup-hh/details).
