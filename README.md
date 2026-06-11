@@ -172,7 +172,7 @@ This table compares relative momentum resolutions and efficiencies for a few key
 </figure> 
 </details>
 
-A database of all large-scale productions of `DELPHES` events for FCC-hh studies can be found [here](https://fcc-physics-events.web.cern.ch/FCChh/index.php). The up-to-date production campaign to use for studies for the 2025 European Strategy update will be using the production tag `v06`. All previous production campaigns are kept for documenation purpose only, click below to see more details. 
+A database of all large-scale productions of `DELPHES` events for FCC-hh studies can be found [here](https://fcc-physics-events.web.cern.ch/fcc-hh). The up-to-date production campaign to use for studies for the 2025 European Strategy update will be using the production tag `v07`. All previous production campaigns are kept for documenation purpose only, click below to see more details. 
 
 <details>
 <summary>FCC-hh production tags</summary>
