@@ -201,7 +201,11 @@ A database of all large-scale productions of `DELPHES` events for FCC-hh studies
   </tr>
   <tr>
     <td class="tg-7zrl">Delphes v0.6</td>
-    <td class="tg-0lax">Production for the strategy update 2025 studies - using DELPHES scenarios I and II, and EDM4hep in v1.</td>
+    <td class="tg-0lax">Test campgain for ESPPU26 studies - using DELPHES scenarios I and II, and EDM4hep in v1.</td>
+  </tr>
+    <tr>
+    <td class="tg-7zrl">Delphes v0.6</td>
+    <td class="tg-0lax">Full production campaign for ESPPU26 studies - using DELPHES scenarios I and II, and EDM4hep in v1.</td>
   </tr>
 </tbody></table>
 
